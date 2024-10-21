@@ -6,7 +6,7 @@
     box-sizing: border-box;
     /*테두리 두께 무시*/
 
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 html {
@@ -259,79 +259,105 @@ li {
     margin-top: -20px;
 }
 
-.about .right {
+/*.about .fa-solid {
+    font-size: 40px;
+    color: #2b2b2b;
+}
+
+.about .right-top {
     width: 900px;
     height: 300px;
-    padding-left: 70px;
-    margin-top: -10px;
+
+    margin-left: 30px;
+    line-height: 150px;
+}
+
+.about .right-top .left-s {
+    width: 800px;
+    height: 150px;
 
     display: flex;
 }
 
-.about .left-s li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
+.about .right-top .right-s {
+    width: 800px;
+    height: 150px;
+
+    display: flex;
 }
 
-.about .center-s li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
+.about .right-bottom {
+    width: 900px;
+    height: 300px;
+
+    /*margin-left: 30px;
+    line-height: 150px;*/
+
+/*background-color: aqua;
 }
 
-.about .right-s li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
+.about .right-bottom .left-ss {
+    width: 800px;
+    height: 150px;
+
+    display: flex;
 }
+
+.about .right-bottom .right-ss {
+    width: 800px;
+    height: 150px;
+
+    display: flex;
+}
+
+.fa-calendar {
+    margin-left: 250px;
+}
+
+.fa-location-dot {
+    margin-left: 250px;
+}
+
+.fa-envelope {
+    margin-left: 243px;
+}
+
+.fa-school-flag {
+    margin-left: 239px;
+}*/
 
 .about .fa-solid {
     font-size: 40px;
     color: #2b2b2b;
 }
 
-.about .left-ss li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
-
-    text-align: left;
-    margin-left: -662px;
-
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+.fa-user1 {
+    margin-right: 150px;
 }
 
-.about .center-ss li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
-
-    text-align: left;
-    margin-left: -420px;
-
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+.right-top {
+    margin-bottom: 20px; /* 위쪽 요소와의 간격 */
 }
 
-.about .right-ss li {
-    width: 240px;
-    height: 75px;
-    margin-top: 50px;
-
-    text-align: left;
-    margin-left: -180px;
-
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+.left-s, .right-s {
+    display: flex;
+    list-style: none;
+    display: flex;
 }
 
-.fa-school-flag {
-    margin-left: -7px;
+.left-s li, .right-s li {
+    margin-bottom: 10px; /* 항목 간 간격 조정 */
+    display: flex; /* 아이콘과 텍스트를 가로로 배치 */
+    align-items: flex-start; /* 아이콘과 텍스트 정렬 */
+}
+
+.left-s li i, .right-s li i {
+    margin-right: 8px; /* 아이콘과 텍스트 간격 */
+    font-size: 40px; /* 아이콘 크기 조정 */
+}
+
+.left-s li span, .right-s li span {
+    display: block; /* 블록 요소로 만들어 줄 바꿈 효과 */
 }
 
 .skills {
@@ -429,6 +455,116 @@ li {
     margin-top: 0;
 }
 
+.projects h2 {
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.projects h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+
+    margin-top: 100px;
+}
+
+.contact h2 {
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact .contents {
+    width: 1200px;
+    height: 700px;
+
+    display: flex;
+}
+
+.contact .left {
+    width: 400px;
+    height: 700px;
+}
+
+.contact .right {
+    width: 800px;
+    height: 700px;
+}
+
+.info {
+    width: 350px;
+    height: 80px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.info h3 {
+    font-size: 15px;
+    /*margin-bottom: 50px;*/
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(55, 83, 93);
+}
+
+.info p {
+    font-size: 15px;
+
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.contact .right p {
+
+    margin-top: 20px;
+}
+
+.contact .right input {
+    width: 800px;
+    height: 30px;
+
+    border: 1px solid #ccc;
+}
+
+.contact .right textarea {
+    width: 800px;
+    height: 400px;
+}
+
+.contact button {
+    width: 800px;
+    height: 30px;
+
+    font-weight: bold;
+    border: none;
+}
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -436,11 +572,14 @@ li {
 }
 
 #up {
-    cursor: pointer; /* 손가락 모양으로 바뀜 */
-    position: fixed; /* 위치 고정 */
+    cursor: pointer;
+    /* 손가락 모양으로 바뀜 */
+    position: fixed;
+    /* 위치 고정 */
     right: 16px;
     bottom: 16px;
-    font-weight: 800; /* 글씨 굵기 */
+    font-weight: 800;
+    /* 글씨 굵기 */
     color: #2b2b2b;
     font-size: 15px;
 
@@ -450,7 +589,8 @@ li {
 
 .arrow {
     background-color: white;
-    border-radius: 50%; /* 테두리 둥글게 */
+    border-radius: 50%;
+    /* 테두리 둥글게 */
     border: 0px;
     width: 60px;
     height: 60px;
