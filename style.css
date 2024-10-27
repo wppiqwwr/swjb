@@ -6,7 +6,7 @@
     box-sizing: border-box;
     /*테두리 두께 무시*/
 
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -219,6 +219,7 @@ li {
 .about {
     width: 1080px;
     height: 500px;
+
     margin: 0 auto;
 }
 
@@ -259,113 +260,87 @@ li {
     margin-top: -20px;
 }
 
-/*.about .fa-solid {
-    font-size: 40px;
-    color: #2b2b2b;
-}
-
-.about .right-top {
+.about .right {
     width: 900px;
     height: 300px;
-
-    margin-left: 30px;
-    line-height: 150px;
-}
-
-.about .right-top .left-s {
-    width: 800px;
-    height: 150px;
+    padding-left: 70px;
+    margin-top: -10px;
 
     display: flex;
 }
 
-.about .right-top .right-s {
-    width: 800px;
-    height: 150px;
-
-    display: flex;
+.about .left-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
 }
 
-.about .right-bottom {
-    width: 900px;
-    height: 300px;
-
-    /*margin-left: 30px;
-    line-height: 150px;*/
-
-/*background-color: aqua;
+.about .center-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
 }
 
-.about .right-bottom .left-ss {
-    width: 800px;
-    height: 150px;
-
-    display: flex;
+.about .right-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
 }
-
-.about .right-bottom .right-ss {
-    width: 800px;
-    height: 150px;
-
-    display: flex;
-}
-
-.fa-calendar {
-    margin-left: 250px;
-}
-
-.fa-location-dot {
-    margin-left: 250px;
-}
-
-.fa-envelope {
-    margin-left: 243px;
-}
-
-.fa-school-flag {
-    margin-left: 239px;
-}*/
 
 .about .fa-solid {
     font-size: 40px;
     color: #2b2b2b;
 }
 
-.fa-user1 {
-    margin-right: 150px;
+.about .left-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -662px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.right-top {
-    margin-bottom: 20px; /* 위쪽 요소와의 간격 */
+.about .center-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -420px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.left-s, .right-s {
-    display: flex;
-    list-style: none;
-    display: flex;
+.about .right-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -180px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.left-s li, .right-s li {
-    margin-bottom: 10px; /* 항목 간 간격 조정 */
-    display: flex; /* 아이콘과 텍스트를 가로로 배치 */
-    align-items: flex-start; /* 아이콘과 텍스트 정렬 */
-}
-
-.left-s li i, .right-s li i {
-    margin-right: 8px; /* 아이콘과 텍스트 간격 */
-    font-size: 40px; /* 아이콘 크기 조정 */
-}
-
-.left-s li span, .right-s li span {
-    display: block; /* 블록 요소로 만들어 줄 바꿈 효과 */
+.fa-school-flag {
+    margin-left: -7px;
 }
 
 .skills {
     background-color: #f2f2f2;
     width: 100%;
-    height: 740px;
+    height: 670px;
 
-    margin-top: 100px;
+    margin-top: 80px;
     padding-top: 100px;
 }
 
@@ -393,9 +368,22 @@ li {
     margin: 0 auto;
 }
 
+.skills .skills-inner ul{
+    width: 1000px;
+    height: 300px;
+
+    border-radius: 30px;
+    background-color: white;
+
+    margin: 0 auto;
+    margin-top: 40px;
+
+    box-shadow: 0px 0px 20px #cacaca;
+}
+
 .skills .contents {
     width: 1200px;
-    height: 300px;
+    height: 200px;
 
     display: flex;
     justify-content: space-around;
@@ -404,8 +392,26 @@ li {
     margin-top: 50px;
 }
 
+.skills img {
+    margin-bottom: 20px;
+}
+
+.skills img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .skills .contents li {
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
+
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-top: -10px;
+
+    color: #2b2b2b;
     /*width: 350px;
     height: 350px;
 
@@ -419,13 +425,13 @@ li {
     /* 색 바뀌는 시간 */
 }
 
-.skills h3 {
+/*.skills h3 {
     font-size: 30px;
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
-/*.skills i {
+.skills i {
     color: #888eef;
     font-size: 40px;
 }
@@ -452,13 +458,18 @@ li {
 }
 
 .projects {
-    height: 1100px;
-    margin-top: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 670px;
+
+    padding-top: 100px;
 }
 
-.projects h2 {
+.projects h2 a{
     font-size: 20px;
     color: rgb(49, 49, 116);
+
+    margin-top: 25px;
 
     font-family: "Black Han Sans", sans-serif;
     font-weight: 400;
@@ -473,9 +484,27 @@ li {
     font-style: normal;
 }
 
+.projects-inner {
+    width: 1200px;
+    height: 700px;
+
+    margin: 0 auto;
+}
+
+.projects .contents {
+    width: 1200px;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
 .projects .contents li {
     width: 350px;
-    height: 350px;
+    height: 240px;
 
     padding: 20px;
 
@@ -483,8 +512,94 @@ li {
     background-color: white;
     font-size: 20px;
 
-    transition: 0.3s;
+    border-radius: 15px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #2b2b2b;
+
+    box-shadow: 0px 0px 20px #cacaca;
+}
+
+.projects h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 15px;
+    
+    background-color: rgb(55, 83, 93);
+    color: white;
+}
+
+.Web {
+    width: 200px;
+    height: 40px;
+}
+
+.pro {
+    width: 225px;
+    height: 40px;
+}
+
+.juje {
+    width: 200px;
+    height: 40px;
+}
+
+.projects .time {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+    margin-left: 4px;
+
+    text-align: left;
+}
+
+.projects .what {
+    margin-top: 8px;
+    margin-left: 4px;
+
+    text-align: left;
+}
+
+.projects .bogose {
+    width: 80px;
+    height: 30px;
+
+    
+    font-size: 15px;
+
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    
+    margin-top: 7px;
+    margin-left: 4px;
+
+    border: 1.3px solid #2b2b2b;
+    border-radius: 5px;
+
+    transition: 0.5s;
     /* 색 바뀌는 시간 */
+}
+
+.projects span {
+    display: flex;
+}
+
+.projects .bogose:hover {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+/*.projects i {
+    color: #888eef;
+    font-size: 40px;
 }
 
 .projects .contents li:hover {
@@ -496,7 +611,7 @@ li {
 .projects .contents li:hover i {
     color: white;
     border-radius: 15px;
-}
+}*/
 
 .contact {
     width: 1200px;
