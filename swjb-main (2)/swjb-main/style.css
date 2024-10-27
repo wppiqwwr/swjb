@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    /*바깥쪽 여백 : 0*/
+    padding: 0;
+    /*안쪽 여백 : 0*/
+    box-sizing: border-box;
+    /*테두리 두께 무시*/
+
+    /*border: 1px solid black;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    /*밑줄 없애기*/
+    display: block;
+    /*a태그를 블록 요소로*/
+    color: black;
+    /*글자색 : 블랙*/
+}
+
+li {
+    list-style-type: none;
+    /*li태그 기호 제거*/
+}
+
+.container {
+    width: 100%;
+    /*가로길이 : 100%*/
+    height: 953px;
+    /*세로길이 : 1200px*/
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(배경.jpg) no-repeat;
+    /*linear-gradient : 그라데이션, (rgb)a : 투명도 값 url : 배경사진, no-repeat : 반복 제거*/
+    background-size: cover;
+    /*container 채우기*/
+
+    color: #2b2b2b;
+    background-color: #3b5998;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    /*자식 요소들을 가로 배치*/
+    justify-content: space-between;
+    /*가로로 어떻게 배치할지 : space-between*/
+    align-items: center;
+    /*세로로 어떻게 배치할지 : center*/
+
+}
+
+.logo {
+    width: 200px;
+    height: 80px;
+
+    color: white;
+
+    text-align: center;
+    font-size: 70px;
+    /*font-weight: bold;*/
+
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    transition: 0.5s;
+}
+
+.logo:hover {
+    color: rgb(55, 83, 93);
+}
+
+.menu {
+    width: 900px;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 45px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+    padding-right: 30px;
+}
+
+.menu li {
+    width: 25%;
+    text-align: center;
+}
+
+.menu li a {
+    color: white;
+    font-weight: bold;
+
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #2b2b2b;
+}
+
+.main {
+    width: 1000px;
+    height: 600px;
+
+    margin: 0 auto;
+    /*블록 요소를 가운데로 배치*/
+    margin-top: 160px;
+    /*바깥쪽 위쪽 여백 200px*/
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 90px;
+    /*margin-bottom: 50px;*/
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(55, 83, 93);
+}
+
+.main h2 {
+    font-size: 90px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-top: -35px;
+}
+
+.main h3 {
+    font-size: 40px;
+    font-weight: normal;
+
+    margin-bottom: 50px;
+
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main .img {
+    margin-bottom: 40px;
+}
+
+.fa-sharp {
+    font-size: 40px;
+    color: #2b2b2b;
+
+    animation: fa-sharp 1s infinite;
+}
+
+@keyframes fa-sharp {
+    0% {
+        transform: translatey(0px);
+    }
+
+    30% {
+        transform: translatey(20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* Download CV */
+/*.main button {
+    font-size: 30px;
+
+    width: 250px;
+    height: 90px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+
+    color: white;
+    transition: 0.3s;
+    /* hover 색 바뀔 때 시간*/
+/*}
+
+.main button:hover {
+    /* 마우스를 올렸을 때 바뀌는 요소 */
+/*background-color: white;
+    color: black;
+}*/
+
+/*.mouse{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    animation: mouse 1s infinite;
+}
+
+/* mouse 움직이게 하는 요소 */
+/*@keyframes mouse{
+    0%{
+        transform: translatey(0px);
+    }
+    10%{
+        transform: translatey(30px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}*/
+
+.about {
+    width: 1080px;
+    height: 500px;
+
+    margin: 0 auto;
+}
+
+.about h2 a {
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about .contents {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    margin-top: 30px;
+}
+
+.about .left {
+    width: 300px;
+    height: 300px;
+}
+
+.about .left img {
+    width: 300px;
+    height: 300px;
+
+    margin-top: -20px;
+}
+
+.about .right {
+    width: 900px;
+    height: 300px;
+    padding-left: 70px;
+    margin-top: -10px;
+
+    display: flex;
+}
+
+.about .left-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+}
+
+.about .center-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+}
+
+.about .right-s li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+}
+
+.about .fa-solid {
+    font-size: 40px;
+    color: #2b2b2b;
+}
+
+.about .left-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -662px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.about .center-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -420px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.about .right-ss li {
+    width: 240px;
+    height: 75px;
+    margin-top: 50px;
+
+    text-align: left;
+    margin-left: -180px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fa-school-flag {
+    margin-left: -7px;
+}
+
+.skills {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 670px;
+
+    margin-top: 80px;
+    padding-top: 100px;
+}
+
+.skills h2 a {
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skills h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.skills-inner {
+    width: 1200px;
+    height: 700px;
+
+    margin: 0 auto;
+}
+
+.skills .skills-inner ul{
+    width: 1000px;
+    height: 300px;
+
+    border-radius: 30px;
+    background-color: white;
+
+    margin: 0 auto;
+    margin-top: 40px;
+
+    box-shadow: 0px 0px 20px #cacaca;
+}
+
+.skills .contents {
+    width: 1200px;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.skills img {
+    margin-bottom: 20px;
+}
+
+.skills img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills .contents li {
+    font-size: 30px;
+    text-align: center;
+
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-top: -10px;
+
+    color: #2b2b2b;
+    /*width: 350px;
+    height: 350px;
+
+    padding: 20px;
+
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+
+    transition: 0.3s;*/
+    /* 색 바뀌는 시간 */
+}
+
+/*.skills h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.skills i {
+    color: #888eef;
+    font-size: 40px;
+}
+
+.skills .contents li:hover {
+    background-color: #888eef;
+    color: white;
+    border-radius: 15px;
+}
+
+.skills .contents li:hover i {
+    color: white;
+    border-radius: 15px;
+}*/
+
+.bg {
+    width: 100%;
+    height: 700px;
+    background: url(bg2.jpg) no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+    /* What I Do 아래 사진 스크롤 */
+}
+
+.projects {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 670px;
+
+    padding-top: 100px;
+}
+
+.projects h2 a{
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    margin-top: 25px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.projects h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.projects-inner {
+    width: 1200px;
+    height: 700px;
+
+    margin: 0 auto;
+}
+
+.projects .contents {
+    width: 1200px;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.projects .contents li {
+    width: 350px;
+    height: 240px;
+
+    padding: 20px;
+
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+
+    border-radius: 15px;
+
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    color: #2b2b2b;
+
+    box-shadow: 0px 0px 20px #cacaca;
+}
+
+.projects h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    text-align: center;
+    line-height: 40px;
+
+    border-radius: 15px;
+    
+    background-color: rgb(55, 83, 93);
+    color: white;
+}
+
+.Web {
+    width: 200px;
+    height: 40px;
+}
+
+.pro {
+    width: 225px;
+    height: 40px;
+}
+
+.juje {
+    width: 200px;
+    height: 40px;
+}
+
+.projects .time {
+    font-size: 15px;
+
+    margin-bottom: 5px;
+    margin-left: 4px;
+
+    text-align: left;
+}
+
+.projects .what {
+    margin-top: 8px;
+    margin-left: 4px;
+
+    text-align: left;
+}
+
+.projects .bogose {
+    width: 80px;
+    height: 30px;
+
+    
+    font-size: 15px;
+
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    
+    margin-top: 7px;
+    margin-left: 4px;
+
+    border: 1.3px solid #2b2b2b;
+    border-radius: 5px;
+
+    transition: 0.5s;
+    /* 색 바뀌는 시간 */
+}
+
+.projects span {
+    display: flex;
+}
+
+.projects .bogose:hover {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+/*.projects i {
+    color: #888eef;
+    font-size: 40px;
+}
+
+.projects .contents li:hover {
+    background-color: #888eef;
+    color: white;
+    border-radius: 15px;
+}
+
+.projects .contents li:hover i {
+    color: white;
+    border-radius: 15px;
+}*/
+
+.contact {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+
+    margin-top: 100px;
+}
+
+.contact h2 {
+    font-size: 20px;
+    color: rgb(49, 49, 116);
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact h1 {
+    font-size: 50px;
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact .contents {
+    width: 1200px;
+    height: 700px;
+
+    display: flex;
+}
+
+.contact .left {
+    width: 400px;
+    height: 700px;
+}
+
+.contact .right {
+    width: 800px;
+    height: 700px;
+}
+
+.info {
+    width: 350px;
+    height: 80px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.info h3 {
+    font-size: 15px;
+    /*margin-bottom: 50px;*/
+
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(55, 83, 93);
+}
+
+.info p {
+    font-size: 15px;
+
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.contact .right p {
+
+    margin-top: 20px;
+}
+
+.contact .right input {
+    width: 800px;
+    height: 30px;
+
+    border: 1px solid #ccc;
+}
+
+.contact .right textarea {
+    width: 800px;
+    height: 400px;
+}
+
+.contact button {
+    width: 800px;
+    height: 30px;
+
+    font-weight: bold;
+    border: none;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#up {
+    cursor: pointer;
+    /* 손가락 모양으로 바뀜 */
+    position: fixed;
+    /* 위치 고정 */
+    right: 16px;
+    bottom: 16px;
+    font-weight: 800;
+    /* 글씨 굵기 */
+    color: #2b2b2b;
+    font-size: 15px;
+
+    padding-right: 2px;
+    padding-top: 8px;
+}
+
+.arrow {
+    background-color: white;
+    border-radius: 50%;
+    /* 테두리 둥글게 */
+    border: 0px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 44px;
+}
