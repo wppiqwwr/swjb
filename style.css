@@ -690,6 +690,7 @@ li {
 
 .info:hover {
     border: 2px solid black;
+    border-radius: 4px;
 }
 
 .contact .right p {
@@ -724,7 +725,7 @@ li {
 }
 
 .contact button:hover {
-    background-color: #3b5998;
+    background-color: rgb(55, 83, 93);
     color: white;
 }
 
